@@ -10,6 +10,19 @@ namespace Arrays
             TestOneBasedIndexArray();
         }
 
+        private static unsafe void IretateOverUnsafe(int[] array)
+        {
+            fixed (int* b = array)
+            {
+                int* p = b;
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.WriteLine(*p); // dereference the pointer
+                    p++;
+                }
+            }
+        }
+
         private static void ArraysDemo()
         {
             int[] a1;
