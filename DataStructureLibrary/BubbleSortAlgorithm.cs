@@ -1,12 +1,8 @@
-﻿namespace BubbleSort
+﻿namespace DataStructureLibrary
 {
-    internal class Program
+    public class BubbleSortAlgorithm
     {
-        private static void Main(string[] args)
-        {
-        }
-
-        public static void BubbleSortAlgorithm(int[] array)
+        public static void BubbleSort(int[] array)
         {
             // starts from the last element and goes backwards
             for (int partIndex = array.Length - 1; partIndex > 0; partIndex--)
