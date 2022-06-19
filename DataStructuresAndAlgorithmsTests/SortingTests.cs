@@ -25,7 +25,6 @@ namespace DataStructuresAndAlgorithmsTests
         }
 
 
-        // Input is BubbleSortAlgorithm Action for bubble sorting
         private void RunTestsForSortAlgorithm(Action<int[]> sortingAlgorithm)
         {
             foreach (var sample in Samples())
@@ -50,6 +49,12 @@ namespace DataStructuresAndAlgorithmsTests
         public void BubbleSort_Is_Valid_And_Sorted()
         {
             RunTestsForSortAlgorithm(BubbleSortAlgorithm.BubbleSort);
+        }
+
+        [Test]
+        public void SelectionSort_ValidInput_SortedOutput()
+        {
+            RunTestsForSortAlgorithm(InsertionSortAlgorithm.SelectionSort);
         }
     }
 }

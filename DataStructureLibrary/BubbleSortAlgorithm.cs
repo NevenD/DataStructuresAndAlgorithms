@@ -14,7 +14,7 @@
                 {
                     if (CheckIfFirstElementIsGreaterThanSecondElement(array[firstElement], array[firstElement + 1]))
                     {
-                        SwapElements(array, firstElement, firstElement + 1);
+                        AlgorithmHelpers.SwapElements(array, firstElement, firstElement + 1);
                     }
                 }
             }
@@ -24,20 +24,6 @@
         private static bool CheckIfFirstElementIsGreaterThanSecondElement(int firstElement, int secondElement)
         {
             return firstElement > secondElement;
-        }
-
-
-        private static void SwapElements(int[] array, int firstElement, int secondElement)
-        {
-            if (firstElement == secondElement)
-            {
-                return;
-            }
-
-            // temporary value for first value
-            int tempFirstValue = array[firstElement];
-            array[firstElement] = array[secondElement];
-            array[secondElement] = tempFirstValue;
         }
     }
 }
