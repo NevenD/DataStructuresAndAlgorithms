@@ -1,35 +1,29 @@
 ﻿namespace DataStructureLibrary
 {
-    public class InsertionSortAlgorithm
+    /// <summary>
+    /// Uses a small amount of extra memory (doesn't depend on n)
+    /// Stable
+    /// O(n2) time complexity (quadratic)
+    /// Problem is that there are lot of sfiting elements
+    /// </summary>
+    public static class InsertionSortAlgorithm
     {
-        /// <summary>
-        /// Swapping the smallest element with the first element of the array. 
-        /// Search the entire array before we swap elements.
-        /// </summary>
-        /// <param name="array"></param>
-        public static void SelectionSort(int[] array)
+        public static void InsertionSort(int[] array)
         {
-            // loops are the hints for time complexity
-            // two inner loops - algorithm for quadratic growth - Big O of  n^2
-            for (int mainIndex = array.Length - 1; mainIndex > 0; mainIndex--)
+            // "wall" is now at the beginning of the array, at index 1
+            for (int partIndex = 1; partIndex < array.Length; partIndex++)
             {
-                int largestAt = 0;
-                for (int i = 0; i <= array.Length; i++)
+                // save currently unsorted element
+                int currentUnsorted = array[partIndex];
+                int element = 0;
+                // if element is greater than zero and element is greater than currentUnsorted 
+                for (element = partIndex; element > 0 && array[element - 1] > currentUnsorted; element--)
                 {
-
-                    if (IsCurrentElementGreaterThanCurrentlyLargestElement(array[i], largestAt))
-                    {
-                        largestAt = i;
-                    }
+                    // shift the elements
+                    array[element] = array[element - 1];
                 }
-
-                AlgorithmHelpers.SwapElements(array, largestAt, mainIndex);
+                array[element] = currentUnsorted;
             }
-        }
-
-        private static bool IsCurrentElementGreaterThanCurrentlyLargestElement(int currentElement, int largestElement)
-        {
-            return currentElement > largestElement;
         }
     }
 }

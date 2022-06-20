@@ -54,7 +54,13 @@ namespace DataStructuresAndAlgorithmsTests
         [Test]
         public void SelectionSort_ValidInput_SortedOutput()
         {
-            RunTestsForSortAlgorithm(InsertionSortAlgorithm.SelectionSort);
+            RunTestsForSortAlgorithm(SelectionSortAlgorithm.SelectionSort);
+        }
+
+        [Test]
+        public void InsertionSort_ValidInput_SortedOutput()
+        {
+            RunTestsForSortAlgorithm(InsertionSortAlgorithm.InsertionSort);
         }
     }
 }
