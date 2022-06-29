@@ -5,7 +5,8 @@
         public static void ShellSort(int[] array)
         {
             int gap = 1;
-            while (gap < array.Length / 3)
+            int maxGapValue = array.Length / 3;
+            while (gap < maxGapValue)
             {
                 gap = 3 * gap + 1;
             }
