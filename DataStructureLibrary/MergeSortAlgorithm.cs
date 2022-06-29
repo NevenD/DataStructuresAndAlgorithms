@@ -13,7 +13,6 @@ namespace DataStructureLibrary
         {
 
             int[] aux = new int[array.Length];
-
             Sort(0, array.Length - 1);
 
             void Sort(int low, int high)
@@ -38,11 +37,10 @@ namespace DataStructureLibrary
                 {
                     return;
                 }
+
                 int i = low;
                 int j = mid + 1;
 
-                // We are defining source array and starting index
-                // Destination array and starting index
                 Array.Copy(array, low, aux, low, high - low + 1);
 
                 for (int k = low; k <= high; k++)
