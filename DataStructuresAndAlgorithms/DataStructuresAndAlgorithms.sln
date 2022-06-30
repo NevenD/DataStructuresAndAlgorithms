@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "..\Arrays\Arrays.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingAlgorithms", "..\SortingAlgorithms\SortingAlgorithms.csproj", "{25412799-9F50-41CE-9069-4CF6FC39F36F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructuresAndAlgorithmsTests", "..\DataStructuresAndAlgorithmsTests\DataStructuresAndAlgorithmsTests.csproj", "{DC13D9FA-A0BA-45AB-B5F7-5E1A3251A99D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructuresAndAlgorithmsTests", "..\DataStructuresAndAlgorithmsTests\DataStructuresAndAlgorithmsTests.csproj", "{DC13D9FA-A0BA-45AB-B5F7-5E1A3251A99D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lists", "..\Lists\Lists.csproj", "{2060EA42-72E3-4D1A-A530-8DCCBC1C2754}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{DC13D9FA-A0BA-45AB-B5F7-5E1A3251A99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC13D9FA-A0BA-45AB-B5F7-5E1A3251A99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC13D9FA-A0BA-45AB-B5F7-5E1A3251A99D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2060EA42-72E3-4D1A-A530-8DCCBC1C2754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2060EA42-72E3-4D1A-A530-8DCCBC1C2754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2060EA42-72E3-4D1A-A530-8DCCBC1C2754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2060EA42-72E3-4D1A-A530-8DCCBC1C2754}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
