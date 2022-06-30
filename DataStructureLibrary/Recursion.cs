@@ -1,7 +1,7 @@
 ﻿namespace DataStructureLibrary
 {
     /// <summary>
-    /// REcursion function is a function that calls itself
+    /// Recursion function is a function that calls itself
     /// </summary>
     public static class Recursion
     {
