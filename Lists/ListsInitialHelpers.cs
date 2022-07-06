@@ -7,12 +7,12 @@ namespace Lists
 
         public static void ChainedNodes()
         {
-            Node firstNode = new Node() { Value = 5 };
-            Node secondNode = new Node() { Value = 1 };
+            var firstNode = new Node<int>(5);
+            var secondNode = new Node<int>(1);
 
             firstNode.Next = secondNode;
 
-            Node thirdNode = new Node() { Value = 3 };
+            var thirdNode = new Node<int>(3);
             secondNode.Next = thirdNode;
 
 
