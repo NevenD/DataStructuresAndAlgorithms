@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Lists
 {
@@ -6,7 +8,7 @@ namespace Lists
     /// If we a value of 3 and we add 1 additionally. Then the value of 
     /// 3 will become tail, and value of 1 will be head
     /// </summary>
-    public class SingleLinkedList<T>
+    public class SingleLinkedList<T> : IEnumerable<T>
     {
         public Node<T> Head { get; private set; }
 
@@ -106,5 +108,20 @@ namespace Lists
 
         public bool IsEmpty => Count == 0;
 
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            Node<T> current = Head;
+            while (current != null)
+            {
+                yield return current.Value;
+                current = current.Next;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
     }
 }

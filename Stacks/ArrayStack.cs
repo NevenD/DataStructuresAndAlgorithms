@@ -36,6 +36,10 @@ namespace Stacks
 
         public T Peek()
         {
+            if (IsEmpty)
+            {
+                throw new InvalidOperationException();
+            }
             return _items[Count - 1];
         }
 
