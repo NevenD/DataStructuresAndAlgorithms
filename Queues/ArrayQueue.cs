@@ -63,6 +63,8 @@ namespace Queues
         }
 
         public int Count => _tail - _head;
+        public int Capacity => _queue.Length;
+
         public bool IsEmpty => Count == 0;
 
         public IEnumerator<T> GetEnumerator()
