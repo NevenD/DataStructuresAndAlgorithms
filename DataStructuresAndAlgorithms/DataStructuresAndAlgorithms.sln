@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stacks", "..\Stacks\Stacks.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StacksTests", "..\StacksTests\StacksTests.csproj", "{19037D20-4F76-4A0E-BF03-894E4997E4CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queues", "..\Queues\Queues.csproj", "{D4DBC57B-58E0-49CA-97FB-F14BD7EAAFBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queues", "..\Queues\Queues.csproj", "{D4DBC57B-58E0-49CA-97FB-F14BD7EAAFBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
