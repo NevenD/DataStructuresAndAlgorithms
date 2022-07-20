@@ -31,9 +31,7 @@ namespace SearchAlgorithms
 
             int youngestPerson = personList.Min(person => person.Age);
 
-            // Single, Any, All, TrueForAll, etc.
-            // Represents linear search, they all work in linear time
-            // Time complexity: O(n)
+
 
             Console.WriteLine("Hello World!");
         }
