@@ -23,7 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StacksTests", "..\StacksTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queues", "..\Queues\Queues.csproj", "{D4DBC57B-58E0-49CA-97FB-F14BD7EAAFBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueuesTests", "..\QueuesTests\QueuesTests.csproj", "{975007DB-E232-4959-8C53-1B573CC29375}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueuesTests", "..\QueuesTests\QueuesTests.csproj", "{975007DB-E232-4959-8C53-1B573CC29375}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchAlgorithms", "..\SearchAlgorithms\SearchAlgorithms.csproj", "{3CB2B441-FD4D-4F16-9898-093E3332DAD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTests", "..\BinarySearchTests\BinarySearchTests.csproj", "{EB55642B-A6A9-43CA-9404-1528C9FAEC7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{975007DB-E232-4959-8C53-1B573CC29375}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{975007DB-E232-4959-8C53-1B573CC29375}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{975007DB-E232-4959-8C53-1B573CC29375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CB2B441-FD4D-4F16-9898-093E3332DAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB2B441-FD4D-4F16-9898-093E3332DAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB2B441-FD4D-4F16-9898-093E3332DAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB2B441-FD4D-4F16-9898-093E3332DAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB55642B-A6A9-43CA-9404-1528C9FAEC7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB55642B-A6A9-43CA-9404-1528C9FAEC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB55642B-A6A9-43CA-9404-1528C9FAEC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB55642B-A6A9-43CA-9404-1528C9FAEC7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
