@@ -2,9 +2,14 @@
 
 namespace SymbolTables
 {
-    internal class Program
+    /// <summary>
+    /// Allows to add a value using a key and then retrive that data by the key
+    /// Dictionary - Symbol tables
+    /// Ordered and uredered
+    /// </summary>
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
