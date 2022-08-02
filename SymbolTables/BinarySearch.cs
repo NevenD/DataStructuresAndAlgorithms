@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Queues;
+using System;
 using System.Collections.Generic;
 
 namespace SymbolTables
@@ -193,6 +194,117 @@ namespace SymbolTables
 
             _keys = keysTemp;
             _values = valueTemp;
+        }
+
+
+        public TKey Min()
+        {
+            if (IsEmpty)
+            {
+                throw new ArgumentNullException("Table is empty");
+            }
+
+            return _keys[0];
+        }
+
+        public TKey Max()
+        {
+            if (IsEmpty)
+            {
+                throw new ArgumentNullException("Table is empty");
+            }
+
+            return _keys[CountNumberOfElements - 1];
+        }
+
+        public void RemoveMin()
+        {
+            if (IsEmpty)
+            {
+                throw new ArgumentNullException("Table is empty");
+            }
+
+            Remove(Min());
+        }
+
+        public void RemoveMax()
+        {
+            if (IsEmpty)
+            {
+                throw new ArgumentNullException("Table is empty");
+            }
+
+            Remove(Max());
+        }
+
+        public TKey Select(int index)
+        {
+            if (index < 0 || index > CountNumberOfElements)
+            {
+                throw new IndexOutOfRangeException("Index out of range");
+            }
+
+            return _keys[index];
+        }
+
+        public TKey Ceiling(TKey key)
+        {
+            if (key is null)
+            {
+                throw new ArgumentNullException("Argument to ceiling is null");
+            }
+
+            int rank = Rank(key);
+
+            if (rank == CountNumberOfElements)
+            {
+                return default(TKey);
+            }
+
+            return _keys[rank];
+        }
+
+        public TKey Floor(TKey key)
+        {
+            if (key is null)
+            {
+                throw new ArgumentNullException("Argument to floor is null");
+            }
+
+            int rank = Rank(key);
+
+            if (rank < CountNumberOfElements && _comparer.Compare(_keys[rank], key) == 0)
+            {
+                return _keys[rank];
+            }
+
+            if (rank == 0)
+            {
+                return default(TKey);
+
+            }
+
+            return _keys[rank - 1];
+        }
+
+        public IEnumerable<TKey> Range(TKey left, TKey right)
+        {
+            var queue = new QueueLinkedList<TKey>();
+            int low = Rank(left);
+            int high = Rank(right);
+
+            for (int i = low; i < high; i++)
+            {
+                queue.Enqueue(_keys[i]);
+            }
+
+            if (Contains(right))
+            {
+                queue.Enqueue(_keys[Rank(right)]);
+
+            }
+
+            return queue;
         }
 
         public bool IsEmpty => CountNumberOfElements == 0;
