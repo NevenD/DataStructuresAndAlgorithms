@@ -32,7 +32,7 @@
 
                 int middleElement = (low + high) / 2;
 
-                if (IsMiddleElementIsEqualToSearchValue(array[middleElement], value))
+                if (IsMiddleElementEqualToSearchValue(array[middleElement], value))
                 {
                     return middleElement;
                 }
@@ -58,12 +58,11 @@
             int lowBoundary = 0;
             int highBoundary = array.Length;
 
-            // conition that checks that low is less then high (low < high)
             while (lowBoundary < highBoundary)
             {
                 int middleElement = (lowBoundary + highBoundary) / 2;
 
-                if (IsMiddleElementIsEqualToSearchValue(array[middleElement], value))
+                if (IsMiddleElementEqualToSearchValue(array[middleElement], value))
                 {
                     return middleElement;
                 }
@@ -81,7 +80,7 @@
             return -1;
         }
 
-        private static bool IsMiddleElementIsEqualToSearchValue(int middleElement, int searchValue)
+        private static bool IsMiddleElementEqualToSearchValue(int middleElement, int searchValue)
         {
             return middleElement == searchValue;
         }
