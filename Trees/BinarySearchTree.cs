@@ -9,6 +9,48 @@ namespace Trees
         private TreeNode<T> _root;
 
 
+        public void Remove(T value)
+        {
+            _root = Remove(_root, value);
+        }
+
+        public TreeNode<T> Remove(TreeNode<T> subtreeRoot, T value)
+        {
+            if (subtreeRoot is null)
+            {
+                return null;
+            }
+
+            int compareTo = value.CompareTo(subtreeRoot.Value);
+
+            if (compareTo < 0)
+            {
+                subtreeRoot.Left = Remove(subtreeRoot.Left, value);
+            }
+            else if (compareTo > 0)
+            {
+                subtreeRoot.Right = Remove(subtreeRoot.Right, value);
+            }
+            else
+            {
+                if (subtreeRoot.Left is null)
+                {
+                    return subtreeRoot.Right;
+                }
+
+                if (subtreeRoot.Right is null)
+                {
+                    return subtreeRoot.Left;
+                }
+
+                subtreeRoot.Value = subtreeRoot.Right.MinimumValueTreeNode();
+
+                subtreeRoot.Right = Remove(subtreeRoot.Right, subtreeRoot.Value);
+            }
+
+            return subtreeRoot;
+        }
+
         public TreeNode<T> Get(T value)
         {
             return _root?.Get(value);
