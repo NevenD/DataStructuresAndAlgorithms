@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTests", "..\Bin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SymbolTables", "..\SymbolTables\SymbolTables.csproj", "{700F0212-AFA0-4822-95C7-28FC785C1465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTables", "..\HashTables\HashTables.csproj", "{286955FD-3AFA-4D65-B952-CC2092AF879C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTables", "..\HashTables\HashTables.csproj", "{286955FD-3AFA-4D65-B952-CC2092AF879C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trees", "..\Trees\Trees.csproj", "{4DED9F74-BCA8-4A46-B4EA-423988A62D9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{286955FD-3AFA-4D65-B952-CC2092AF879C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{286955FD-3AFA-4D65-B952-CC2092AF879C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{286955FD-3AFA-4D65-B952-CC2092AF879C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DED9F74-BCA8-4A46-B4EA-423988A62D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DED9F74-BCA8-4A46-B4EA-423988A62D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DED9F74-BCA8-4A46-B4EA-423988A62D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DED9F74-BCA8-4A46-B4EA-423988A62D9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
