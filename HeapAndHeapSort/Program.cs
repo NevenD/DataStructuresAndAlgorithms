@@ -4,9 +4,24 @@ namespace HeapAndHeapSort
 {
     public class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var heapTest = new MaxHeap<int>();
+            heapTest.Insert(24);
+            heapTest.Insert(37);
+            heapTest.Insert(17);
+            heapTest.Insert(28);
+            heapTest.Insert(31);
+
+            foreach (var item in heapTest.GetAllValues())
+            {
+                Console.WriteLine($"Heap item: {item}");
+
+            }
+
+            Console.Read();
+
         }
     }
 }
