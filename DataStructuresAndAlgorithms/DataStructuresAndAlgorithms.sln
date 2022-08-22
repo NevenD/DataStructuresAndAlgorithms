@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTables", "..\HashTables
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trees", "..\Trees\Trees.csproj", "{4DED9F74-BCA8-4A46-B4EA-423988A62D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapAndHeapSort", "..\HeapAndHeapSort\HeapAndHeapSort.csproj", "{1ECA10FC-2553-4556-BF0B-8DA74F6A71AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeapAndHeapSort", "..\HeapAndHeapSort\HeapAndHeapSort.csproj", "{1ECA10FC-2553-4556-BF0B-8DA74F6A71AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalAlgorithms", "..\AdditionalAlgorithms\AdditionalAlgorithms.csproj", "{3FD66F8D-35BB-42EB-9D59-FA39DC7F7B15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{1ECA10FC-2553-4556-BF0B-8DA74F6A71AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ECA10FC-2553-4556-BF0B-8DA74F6A71AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ECA10FC-2553-4556-BF0B-8DA74F6A71AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD66F8D-35BB-42EB-9D59-FA39DC7F7B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD66F8D-35BB-42EB-9D59-FA39DC7F7B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD66F8D-35BB-42EB-9D59-FA39DC7F7B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD66F8D-35BB-42EB-9D59-FA39DC7F7B15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
