@@ -10,7 +10,13 @@ namespace AdditionalAlgorithms
         private static void Main(string[] args)
         {
 
-            foreach (var prime in SieveOfEratosthenes.Sieve(30))
+            //foreach (var prime in SieveOfEratosthenes.Sieve(30))
+            //{
+            //    Console.WriteLine(prime);
+
+            //}
+
+            foreach (var prime in SieveOfEratosthenes.GetPrimeNumbers(30))
             {
                 Console.WriteLine(prime);
 

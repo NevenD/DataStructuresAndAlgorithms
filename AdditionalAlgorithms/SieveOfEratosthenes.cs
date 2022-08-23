@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Numerics;
 
 namespace AdditionalAlgorithms
 {
@@ -31,6 +33,22 @@ namespace AdditionalAlgorithms
 
             }
 
+        }
+
+        public static List<BigInteger> GetPrimeNumbers(int count)
+        {
+            var output = new List<BigInteger>();
+            byte minimumPrimeNumber = 2;
+
+            for (BigInteger primeNumber = minimumPrimeNumber; output.Count < count; primeNumber++)
+            {
+                if (output.All(x => primeNumber % x != 0))
+                {
+                    output.Add(primeNumber);
+                }
+            }
+
+            return output;
         }
 
     }
